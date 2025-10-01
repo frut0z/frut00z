@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>frut00s</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff6cf;
+      padding: 0 50px;
+      position: relative;
+    }
+
+    .bouquet {
+      max-width: 675px;
+      height: auto;
+      transform: translateY(5%);
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    .congrats-text {
+      position: absolute;
+      top: 20%;
+      left: 70%;
+      transform: translateX(-50%);
+      font-size: 70px;
+      font-weight: bold;
+      font-family: 'Great Vibes', cursive;
+      color: black;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .message-text {
+      position: absolute;
+      top: 32%;
+      left: 70%;
+      transform: translateX(-50%);
+      width: 650px;
+      font-size: 30px;
+      font-family: 'Patrick Hand', sans-serif;
+      color: #2c2c2c;
+      text-align: center;
+      line-height: 1.4;
+
+      background: repeating-linear-gradient(
+        45deg,
+        #2c2c2c,
+        #2c2c2c 1px,
+        #3a3a3a 2px,
+        #2c2c2c 3px
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0.5px 0.5px 0px rgba(0,0,0,0.2);
+    }
+
+    .signature {
+      display: block;
+      margin-top: 20px; /* space after "doctor!" */
+      font-size: 24px;
+      font-family: 'Patrick Hand', sans-serif;
+      text-align: right;
+      color: #2c2c2c;
+
+      background: repeating-linear-gradient(
+        45deg,
+        #2c2c2c,
+        #2c2c2c 1px,
+        #3a3a3a 2px,
+        #2c2c2c 3px
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0.5px 0.5px 0px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Left side: Bouquet with music -->
+  <div>
+    <img src="bouquet.png" alt="Crayon Bouquet" class="bouquet">
+
+    <audio controls autoplay loop>
+      <source src="conglatulations.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- Upper Right: Congratulations -->
+  <div class="congrats-text">
+    Congratulations, Mohamed!
+  </div>
+
+  <!-- Message + Signature -->
+  <div class="message-text">
+    Finally, the time has come—your exams are all finished! As a gift, here’s a flower for you, hahaha.
+    It may only appear virtually, but it comes from the bottom of my heart, my friend, hahaha.
+    You really did great, and all your hard work will surely pay off.
+    Keep striving, keep reaching for more, because this is just the beginning of bigger things.
+    Cheers to your success now and to the many more successes ahead, doctor!
+
+    <span class="signature">-Elle, your super pretty pro max friend</span>
+  </div>
+</body>
+</html>
